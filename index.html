@@ -5,10 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Lucas Cordeiro de Lima</title>
     <link rel="shortcut icon" href="img/favicon.svg">
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- JS -->
     <script src="js/scripts.js"></script>
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/43bd8987e3.js" crossorigin="anonymous"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header id="header">
+        <div class="container">
+            <div class="logo-content">
+                <i class="fas fa-code" id="logo"></i>
+                <div class="logo-name">
+                    <h1>Lucas Cordeiro de Lima</h1>
+                </div>
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#" class="selected">Inicio</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#tecnologias">Tecnologias</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <div class="container">
+                <div class="about-content">
+                    <h2>Olá, eu sou</h2>
+                    <h1>Lucas Cordeiro de Lima</h1>
+                    <h2 id="title-changer">Desenvolvedor Full-Stack</h2>
+                    <div class="btn-container">
+                        <button class="about-bts"><i class="fa-brands fa-github"></i></button>
+                        <button class="about-bts"><i class="fa-brands fa-linkedin-in"></i></button>
+                    </div>
+                </div>
+                <div class="about-photo">
+                    <div class="ellipse"></div>
+                    <img src="img/personal-photo.jpeg" alt="personal-img">
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
