@@ -27,7 +27,7 @@ body{
 
 #header{
     width: 100%;
-    background-color: rgba(18, 18, 24, 0.7);
+    background-color: rgba(18, 18, 24, 0.9);
     padding: 20px;
     position: fixed;
     z-index: 999;
@@ -195,7 +195,7 @@ section {
     background-color: var(--bg-primary)
 }
 
-#about .container{
+#about .container, #tecnologies .container{
     width: 65%;
     margin: 30px auto;
 }
@@ -236,4 +236,52 @@ section {
     font-weight: 500;
     text-align: end;
     font-size: 1.7em;
+}
+
+.tecnologies-lists-container{
+    margin-top: 20px;
+}
+
+.tec-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.tec-list:last-child{
+    margin-bottom: 0;
+}
+
+.card-tec{
+    width: 200px;
+    height: 200px;
+    border: 2px solid var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    transition: .5s;
+}
+.card-tec:hover{
+    transform: scale(1.1);
+    transition: .5s;
+    border-color: var(--primary-color);
+}
+
+.tec-list i{
+    font-size: 3rem;
+}
+.tec-list h1{
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+.tec-list p{
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+#csharp-logo{
+    filter: invert(1);
 }
