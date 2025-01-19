@@ -22,12 +22,12 @@ body{
     margin: 0;
     padding: 0;
     color: #fff;
-    background-color: var(--bg-primary);
+    background-color: var(--bg-primary-2);
 }
 
 #header{
     width: 100%;
-    background-color: rgba(18, 18, 24, 0.9);
+    background-color: rgba(18, 18, 24, 0.7);
     padding: 20px;
     position: fixed;
     z-index: 999;
@@ -84,38 +84,46 @@ body{
     color: var(--primary-color);
 }
 
-main{
+#presentation{
     position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
     padding-top: 70px;
+    padding-bottom: 70px;
 }
 
-section {
-    width: 90%;
-}
-
-#about{
+#presentation .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 70%;
     padding-top: 75px;
 }
 
-#about .container{
+main{
+    position: relative;
+    width: 100%;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 70px;
 }
 
-.about-content{
+section {
+    width: 100%;
+}
+
+.presentation-content{
     height: 200px;
     padding: 0px 30px;
     flex: 2 1 50%;
 }
-.about-content h1{ /* Nome */
+.presentation-content h1{ /* Nome */
     font-size: 3.5rem;
     color: var(--primary-color);
 }
-.about-content h2{
+.presentation-content h2{
     font-size: 2rem;
     font-weight: normal;
 }
@@ -123,7 +131,7 @@ section {
     font-weight: bold;
 }
 
-.about-photo{
+.presentation-photo{
     flex: 1 1 30%;
     display: flex;
     align-items: center;
@@ -131,7 +139,7 @@ section {
     position: relative;
 }
 
-.about-photo img{
+.presentation-photo img{
     width: 350px;
     height: 350px;
     object-fit: cover;
@@ -149,7 +157,7 @@ section {
     z-index: -1;
 }
 
-.about-bts{
+.presentation-bts{
     margin-top: 10px;
     width: 50px;
     height: 50px;
@@ -159,7 +167,7 @@ section {
     background-color: transparent;
     transition: .5s;
 }
-.about-bts i{
+.presentation-bts i{
     width: 45px;
     height: 45px;
     font-size: 32px;
@@ -169,16 +177,63 @@ section {
     transition: .5s;
 }
 
-.about-bts i:hover{
+.presentation-bts i:hover{
     opacity: 1;
     transition: .5s;
     cursor: pointer;
 }
-.about-bts:hover{
+.presentation-bts:hover{
     border: 2px solid rgba(117, 98, 224);
     transition: .5s;
 }
 
-.about-bts:first-child{
+.presentation-bts:first-child{
     margin-right: 10px;
+}
+
+#about{
+    background-color: var(--bg-primary)
+}
+
+#about .container{
+    width: 65%;
+    margin: 30px auto;
+}
+
+.section-title{
+    font-weight: normal;
+    font-size: 2em;
+    color: var(--primary-color);
+}
+
+.about-text{
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.about-cards{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-cards .card{
+    width: 275px;
+    height: 275px;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about-cards .card i{
+    font-size: 2.5em;
+}
+
+.about-cards .card p{
+    font-weight: 500;
+    text-align: end;
+    font-size: 1.7em;
 }
