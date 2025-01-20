@@ -107,7 +107,7 @@ main{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-top: 70px;
+    padding-top: 10px;
 }
 
 section {
@@ -191,11 +191,11 @@ section {
     margin-right: 10px;
 }
 
-#about{
+main section:nth-child(odd), footer{
     background-color: var(--bg-primary)
 }
 
-#about .container, #tecnologies .container{
+.container{
     width: 65%;
     margin: 30px auto;
 }
@@ -238,17 +238,17 @@ section {
     font-size: 1.7em;
 }
 
-.tecnologies-lists-container{
+.tecnologies-lists-container, .projects-cards{
     margin-top: 20px;
 }
 
-.tec-list{
+.tec-list, .projects-cards{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 20px;
 }
-.tec-list:last-child{
+.tec-list:last-child, .projects-cards:last-child{
     margin-bottom: 0;
 }
 
@@ -284,4 +284,106 @@ section {
 
 #csharp-logo{
     filter: invert(1);
+}
+
+.project-card{
+    width: 360px;
+    height: 240px;
+    border-radius: 20px;
+    border: 2px solid var(--primary-color);
+    overflow: hidden;
+    transition: .5s;
+}
+
+.project-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+    position: relative;
+    z-index: 0;
+    transition: .5s;
+}
+
+.project-card .card-desc{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(24, 24, 36, 0.7);
+    position: relative;
+    z-index: 1;
+    bottom: 0;
+    padding: 5px;
+    transition: .4s;
+
+}
+
+.card-desc h2{
+    text-align: center;
+}
+
+.card-btns{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.card-btns button{
+    width: 100px;
+    height: 30px;
+    font-family: "Satoshi";
+    font-weight: bold;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+.project-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 5px 0 rgba(0,0,0,1);
+}
+
+.project-card:hover img{
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+.project-card:hover .card-desc {
+    bottom: 100px;
+    transition: .4s;
+}
+
+.contact-content p{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.social-media{
+    display: flex;
+    align-items: center;
+    height: 2.3em;
+}
+.social-media a{    
+    font-size: 2em;
+    width: 50px;
+    text-align: center;
+    color: var(--primary-color);
+    margin-right: 10px;
+    transition: .5s;
+    opacity: 0.7;
+}
+.social-media a:hover{
+    font-size: 2.3em;
+    opacity: 1;
+    transition: .5s;
+}
+
+footer{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: #aaa;
 }
