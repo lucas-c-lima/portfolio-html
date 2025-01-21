@@ -456,10 +456,10 @@ footer{
     color: #aaa;
 }
 
-/* ≥576px  ≥768px ≥992px ≥1200px*/
+/* Media Queries */
 
-
-@media (max-width: 575px) {
+/*≥992px ≥1200px*/
+@media (max-width: 576px) {
     .container{
         width: 90%;
     }
@@ -481,6 +481,9 @@ footer{
     }
     .on-pc{
         display: none;
+    }
+    #menu-toggle:hover{
+        color: #bbb;
     }
     #side-menu{
         top: 45px;
@@ -545,7 +548,6 @@ footer{
     .tec-list img{
         width: 7vw;
         height: 7vw;
-        
     }
     #i-csharp-logo{
         margin-bottom: -5px;
@@ -554,7 +556,6 @@ footer{
         font-size: 3vw;
     }
     .tec-list p {
-        font-size: 0.8rem;
         display: none;
     }
     .projects-cards {
@@ -566,10 +567,6 @@ footer{
     .project-card {
         width: 100%;
         height: 170px;
-        border-radius: 20px;
-        border: 2px solid var(--primary-color);
-        overflow: hidden;
-        transition: .5s;
     }
     .card-desc h2 {
         font-size: 6vw;
@@ -579,7 +576,6 @@ footer{
     }
     .project-card:hover .card-desc {
         bottom: 90px;
-        transition: .4s;
     }
     .contact-content{
         display: flex;
@@ -591,4 +587,133 @@ footer{
         text-align: center;
     }
     
+}
+
+@media (min-width: 577px) and (max-width: 768px){
+    .container{
+        width: 90%;
+    }
+    #header{
+        padding: 10px 20px;
+    }
+    #header .container{
+        width: 100%;
+        justify-content: space-between;  
+    }
+    #logo{
+        font-size: 2.5vw;
+    }
+    .logo-content h1{
+        font-size: 2.5vw;
+    }
+    .on-mobile{
+        display: block;
+    }
+    .on-pc{
+        display: none;
+    }
+    #menu-toggle:hover{
+        color: #bbb;
+    }
+    #side-menu{
+        top: 45px;
+    }
+    #presentation{
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    #presentation .container{
+        gap: 20px;
+        width: 90%;
+    }
+    .presentation-photo img, .ellipse{
+        width: 200px;
+        height: 200px;
+    }
+    .presentation-content h1{
+        font-size: 2rem;
+    }
+    .presentation-content h2{
+        font-size: 1.2em;
+    }
+    .presentation-bts {
+        width: 40px;
+        height: 40px;
+    }
+    .presentation-bts i {
+        width: 35px;
+        height: 35px;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .section-title{
+        font-size: 1.4em;
+    }
+    .about-text {
+        font-size: 1.8vw;
+    }
+    .about-cards .card {
+        width: 22vw;
+        height: 22vw;
+        padding: 7px;
+        border-radius: 15px;
+    }
+    .about-cards .card i {
+        font-size: 5vw;
+    }
+    .about-cards .card p {
+        font-size: 2.8vw;
+    }
+    .card-tec {
+        width: 17vw;
+        height: 17vw;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    .tec-list i {
+        font-size: 7vw;
+    }
+    .tec-list img{
+        width: 7vw;
+        height: 7vw;
+    }
+    #i-csharp-logo{
+        margin-bottom: -5px;
+    }
+    .tec-list h1 {
+        font-size: 3vw;
+    }
+    .tec-list p {
+        display: none;
+    }
+    .projects-cards {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .project-card {
+        width: 45%;
+        height: 150px;
+    }
+    .card-desc h2 {
+        font-size: 3vw;
+    }
+    .project-card .card-desc {
+        height: 85px;
+    }
+    .project-card:hover .card-desc {
+        bottom: 85px;
+    }
+    .contact-content{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .contact-content p {
+        font-size: 1.5em;
+        text-align: center;
+    }
 }
