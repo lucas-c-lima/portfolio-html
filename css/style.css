@@ -1,3 +1,27 @@
+/* Animations -------------------------------------- */
+@keyframes fadeInOut {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+      filter: blur(5px);
+    }
+    10% {
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
+    }
+    90% {
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-10px);
+      filter: blur(5px);
+    }
+  }
+
 /* Fonts --------------------------------------------*/
 @font-face {
     font-family: "Satoshi";
@@ -179,6 +203,14 @@ body{
 
 #title-changer{
     font-weight: bold;
+    filter: blur(10px);
+    transform: translateY(10px);
+    animation: fadeInOut 4s infinite;
+    position: absolute;
+}
+
+.btn-container{
+    margin-top: calc(2vw + 10px);
 }
 
 .presentation-photo{
@@ -291,15 +323,22 @@ main section:nth-child(odd), footer{
 }
 
 .about-cards .card{
-    width: 19vw;
-    height: 19vw;
+    width: 16vw;
+    height: 16vw;
     background-color: var(--primary-color);
     border-radius: 20px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: .2s;
 }
+
+.about-cards .card:hover{
+    transition: .2s;
+    box-shadow: 0 0 10px var(--primary-color);
+}
+
 .about-cards .card i{
     font-size: 3vw;
 }
@@ -326,8 +365,8 @@ main section:nth-child(odd), footer{
 }
 
 .card-tec{
-    width: 15vw;
-    height: 15vw;
+    width: 13vw;
+    height: 13vw;
     border: 2px solid var(--secondary-color);
     display: flex;
     flex-direction: column;
@@ -344,15 +383,15 @@ main section:nth-child(odd), footer{
 }
 
 .tec-list i{
-    font-size: 4vw;
+    font-size: 3.8vw;
 }
 
 .tec-list h1{
-    font-size: 2.5vw;
+    font-size: 2vw;
     color: var(--primary-color);
 }
 .tec-list p{
-    font-size: 1.6vw;
+    font-size: 1.5vw;
     color: #aaa;
 }
 
@@ -366,7 +405,7 @@ main section:nth-child(odd), footer{
 }
 
 .project-card{
-    width: 33%;
+    width: 32%;
     height: 15vw;
     border-radius: 20px;
     border: 2px solid var(--primary-color);

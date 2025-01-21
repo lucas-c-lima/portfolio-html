@@ -25,3 +25,24 @@ function toggleMenu() {
     sideMenu.classList.toggle('open');
     sideMenuToggle.classList.toggle('open');
 }
+
+/* Título muda a cada 5 segundos */
+const titles = [
+    "Analista de Dados",
+    "Desenvolvedor de API",
+    "Desenvolvedor Full-Stack"
+];
+
+let currentIndex = 0;
+  
+function changeTitle() {
+    const titleElement = document.getElementById('title-changer');
+    titleElement.style.animation = "none";
+    titleElement.offsetHeight;
+    titleElement.style.animation = "";
+
+    titleElement.textContent = titles[currentIndex];
+    currentIndex = (currentIndex + 1) % titles.length;
+}
+
+  setInterval(changeTitle, 4000);
