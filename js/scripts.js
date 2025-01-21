@@ -28,9 +28,9 @@ function toggleMenu() {
 
 /* Título muda a cada 5 segundos */
 const titles = [
+    "Desenvolvedor Full-Stack",
     "Analista de Dados",
-    "Desenvolvedor de API",
-    "Desenvolvedor Full-Stack"
+    "Desenvolvedor de API"
 ];
 
 let currentIndex = 0;
@@ -44,5 +44,5 @@ function changeTitle() {
     titleElement.textContent = titles[currentIndex];
     currentIndex = (currentIndex + 1) % titles.length;
 }
-
-  setInterval(changeTitle, 4000);
+    changeTitle()
+    setInterval(changeTitle, 4000);
