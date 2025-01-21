@@ -8,3 +8,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+const sideMenuToggle = document.getElementById('menu-toggle');
+const sideMenu = document.getElementById('side-menu');
+
+sideMenuToggle.addEventListener('click', () => {
+    sideMenu.classList.toggle('open');
+    sideMenuToggle.classList.toggle('open');
+});
