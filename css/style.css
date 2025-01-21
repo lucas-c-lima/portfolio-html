@@ -717,3 +717,133 @@ footer{
         text-align: center;
     }
 }
+
+
+@media (min-width: 769px) and (max-width: 992px){
+    .container{
+        width: 90%;
+    }
+    #header{
+        padding: 10px 20px;
+    }
+    #header .container{
+        width: 100%;
+        justify-content: space-between;  
+    }
+    #logo{
+        font-size: 2.5vw;
+    }
+    .logo-content h1{
+        font-size: 2.2vw;
+    }
+    .on-mobile{
+        display: none;
+    }
+    .on-pc{
+        display: block;
+    }
+    #menu-toggle:hover{
+        color: #bbb;
+    }
+    #side-menu{
+        top: 45px;
+    }
+    #presentation{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    #presentation .container{
+        gap: 20px;
+        width: 90%;
+    }
+    .presentation-photo img, .ellipse{
+        width: 250px;
+        height: 250px;
+    }
+    .presentation-content h1{
+        font-size: 2rem;
+    }
+    .presentation-content h2{
+        font-size: 1.2em;
+    }
+    .presentation-bts {
+        width: 50px;
+        height: 50px;
+    }
+    .presentation-bts i {
+        width: 45px;
+        height: 45px;
+        font-size: 32px;
+        line-height: 46px;
+    }
+    .section-title{
+        font-size: 1.4em;
+    }
+    .about-text {
+        font-size: 1.1em;
+    }
+    .about-cards .card {
+        width: 22vw;
+        height: 22vw;
+        padding: 10px;
+        border-radius: 20px;
+    }
+    .about-cards .card i {
+        font-size: 5vw;
+    }
+    .about-cards .card p {
+        font-size: 2.8vw;
+    }
+    .card-tec {
+        width: 17vw;
+        height: 17vw;
+        padding: 5px;
+        border-radius: 20px;
+    }
+    .tec-list i {
+        font-size: 6vw;
+    }
+    .tec-list img{
+        width: 6vw;
+        height: 6vw;
+    }
+    #i-csharp-logo{
+        margin-bottom: -10px;
+    }
+    .tec-list h1 {
+        font-size: 2.5vw;
+    }
+    .tec-list p {
+        font-size: 2vw;
+        display: block;
+    }
+    .projects-cards {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .project-card {
+        width: 33%;
+        height: 150px;
+    }
+    .card-desc h2 {
+        font-size: 2vw;
+    }
+    .project-card .card-desc {
+        height: 85px;
+    }
+    .project-card:hover .card-desc {
+        bottom: 85px;
+    }
+    .contact-content{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .contact-content p {
+        font-size: 1.5em;
+        text-align: center;
+    }
+}
