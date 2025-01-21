@@ -326,6 +326,7 @@ main section:nth-child(odd), footer{
     width: 16vw;
     height: 16vw;
     background-color: var(--primary-color);
+    opacity: 0.8;
     border-radius: 20px;
     padding: 20px;
     display: flex;
@@ -337,6 +338,7 @@ main section:nth-child(odd), footer{
 .about-cards .card:hover{
     transition: .2s;
     box-shadow: 0 0 10px var(--primary-color);
+    opacity: 1;
 }
 
 .about-cards .card i{
@@ -570,6 +572,15 @@ footer{
     }
     .presentation-content h2{
         font-size: 1.2em;
+        text-align: center;
+    }
+    .title-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    #title-changer{
         text-align: center;
     }
     .btn-container{
