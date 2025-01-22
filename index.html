@@ -25,11 +25,11 @@
             </div>
             <nav id="navbar">
                 <ul>
-                    <li class="on-pc"><a href="#presentation">Inicio</a></li>
-                    <li class="on-pc"><a href="#about">Sobre</a></li>
-                    <li class="on-pc"><a href="#tecnologies">Tecnologias</a></li>
-                    <li class="on-pc"><a href="#projects">Projetos</a></li>
-                    <li class="on-pc"><a href="#contact">Contato</a></li>
+                    <li class="on-pc"><a href="#presentation" id="navbar1">Inicio</a></li>
+                    <li class="on-pc"><a href="#about" id="navbar2">Sobre</a></li>
+                    <li class="on-pc"><a href="#tecnologies" id="navbar3">Tecnologias</a></li>
+                    <li class="on-pc"><a href="#projects" id="navbar4">Projetos</a></li>
+                    <li class="on-pc"><a href="#contact" id="navbar5">Contato</a></li>
                     <li><i class="fas fa-gear" id="menu-toggle"></i></li>
                 </ul>
             </nav>
@@ -37,18 +37,18 @@
     </header>
     <nav class="side-menu" id="side-menu">
         <ul>
-            <li class="on-mobile"><a href="#presentation">Inicio</a></li>
-            <li class="on-mobile"><a href="#about">Sobre</a></li>
-            <li class="on-mobile"><a href="#tecnologies">Tecnologias</a></li>
-            <li class="on-mobile"><a href="#projects">Projetos</a></li>
-            <li class="on-mobile"><a href="#contact">Contato</a></li>
-            <li><a href="#">Light mode</a></li>
+            <li class="on-mobile"><a href="#presentation" id="navbar6">Inicio</a></li>
+            <li class="on-mobile"><a href="#about" id="navbar7">Sobre</a></li>
+            <li class="on-mobile"><a href="#tecnologies" id="navbar8">Tecnologias</a></li>
+            <li class="on-mobile"><a href="#projects" id="navbar9">Projetos</a></li>
+            <li class="on-mobile"><a href="#contact" id="navbar10">Contato</a></li>
+            <li><a id="btn-language" onclick="changeLanguage()">Change Language</a></li>
         </ul>
     </nav>
     <section id="presentation">
         <div class="container">
             <div class="presentation-content">
-                <h2>Olá, eu sou</h2>
+                <h2 id="h2-greetings">Olá, eu sou</h2>
                 <h1>Lucas Cordeiro de Lima</h1>
                 <div class="title-container">
                     <h2 id="title-changer">Desenvolvedor Full-Stack</h2>
@@ -68,28 +68,28 @@
         <section id="about">
             <div class="container">
                 <div class="about-content">
-                    <h2 class="section-title">Sobre Mim</h2>
-                    <p class="about-text">
-                        Sou um <strong>Desenvolvedor de Softwares</strong> apaixonado por criar soluções de software eficientes. Com experiência em diversas linguagens de programação e tecnologias, foco no <strong>desenvolvimento de aplicativos</strong> e <strong>APIs</strong> que aprimoram a experiência do usuário e otimizam processos.
+                    <h2 class="section-title" id="title-about">Sobre Mim</h2>
+                    <p class="about-text" id="about-text">
+                        Sou um <strong>Desenvolvedor de Softwares</strong> apaixonado por criar soluções eficientes. Com experiência em diversas linguagens de programação e tecnologias, foco no <strong>desenvolvimento de aplicativos</strong> e <strong>APIs</strong> que aprimoram a experiência do usuário e otimizam processos.
                         <br>Possuo graduação em Sistemas de Informação pela Pontifícia Universidade Católica do Paraná. Atuo como desenvolvedor desde 2022 com ferramentas como <strong>React</strong>, <strong>Java</strong>, <strong>Python</strong> entre outras tecnologias.
                         <br>Minhas principais habilidades são:
                     </p>
                     <div class="about-cards">
                         <div class="card">
                             <i class="fas fa-code"></i>
-                            <p>2+ Anos de Experiência</p>
+                            <p id="card1">2+ Anos de Experiência</p>
                         </div>
                         <div class="card">
                             <i class="fa-solid fa-palette"></i>
-                            <p>UI/UX</p>
+                            <p id="card2">UI/UX</p>
                         </div>
                         <div class="card">
                             <i class="fa-solid fa-code-branch"></i>
-                            <p>Versionamento de Código</p>
+                            <p id="card3">Versionamento de Código</p>
                         </div>
                         <div class="card">
                             <i class="fa-solid fa-gears"></i>
-                            <p>Metodologias Ágeis</p>
+                            <p id="card4">Metodologias Ágeis</p>
                         </div>
                     </div>
                 </div>
@@ -98,60 +98,60 @@
         <section id="tecnologies">
             <div class="container">
                 <div class="tecnologies-content">
-                    <h2 class="section-title">Tecnologias e Ferramentas</h2>
+                    <h2 class="section-title" id="title-tec">Tecnologias e Ferramentas</h2>
                     <div class="tecnologies-lists-container">
                         <div class="tec-list">
                             <div class="card-tec">
                                 <i class="fa-brands fa-react"></i>
                                 <h1>React</h1>
-                                <p>Avançado</p>
+                                <p class="tec-adv">Avançado</p>
                             </div>
                             <div class="card-tec">
                                 <i class="fa-brands fa-node"></i>
                                 <h1>NodeJS</h1>
-                                <p>Intermediário</p>
+                                <p class="tec-med">Intermediário</p>
                             </div>
                             <div class="card-tec">
                                 <i class="fa-brands fa-python"></i>
                                 <h1>Python</h1>
-                                <p>Intermediário</p>
+                                <p class="tec-med">Intermediário</p>
                             </div>
                             <div class="card-tec">
                                 <i class="fa-brands fa-js"></i>
                                 <h1>JavaScript</h1>
-                                <p>Avançado</p>
+                                <p class="tec-adv">Avançado</p>
                             </div>
                             <div class="card-tec">
                                 <i class="fa-brands fa-css3-alt"></i>
                                 <h1>CSS</h1>
-                                <p>Avançado</p>
+                                <p class="tec-adv">Avançado</p>
                             </div>
                         </div>
                         <div class="tec-list">
                             <div class="card-tec">
                                 <i id="i-csharp-logo"><img id="csharp-logo" src="https://img.icons8.com/ios-filled/50/c-sharp-logo.png" alt="c-sharp-logo"/></i>
                                 <h1>C#</h1>
-                                <p>Básico</p>
+                                <p class="tec-bas">Básico</p>
                             </div>
                             <div class="card-tec">
                                 <i class="fa-brands fa-java"></i>
                                 <h1>Java</h1>
-                                <p>Intermediário</p>
+                                <p class="tec-med">Intermediário</p>
                             </div>
                             <div class="card-tec">
                                 <i class="fa-brands fa-git-alt"></i>
                                 <h1>Git</h1>
-                                <p>Básico</p>
+                                <p class="tec-bas">Básico</p>
                             </div>
                             <div class="card-tec">
                                 <i class="fa-solid fa-database"></i>
                                 <h1>SQL</h1>
-                                <p>Intermediário</p>
+                                <p class="tec-med">Intermediário</p>
                             </div>
                             <div class="card-tec">
                                 <i class="fa-brands fa-aws"></i>
                                 <h1>AWS</h1>
-                                <p>Básico</p>
+                                <p class="tec-bas">Básico</p>
                             </div>
                         </div>
                     </div>
@@ -161,33 +161,33 @@
         <section id="projects">
             <div class="container">
                 <div class="projects-content">
-                    <h2 class="section-title">Portfolio</h2>
+                    <h2 class="section-title" id="title-portfolio">Portfolio</h2>
                     <div class="projects-cards">
                         <div class="project-card">
                             <img src="img/ccg-site.png" alt="Site Adoção de Gatos - Crazy Cat Gang">
                             <div class="card-desc">
-                                <h2>Site para adoção de gatos</h2>
+                                <h2 id="port1">Site para adoção de gatos</h2>
                                 <div class="card-btns">
                                     <a href="https://lucas-c-lima.github.io/ccg-site/" target="_blank">Site</a>
-                                    <a href="https://github.com/lucas-c-lima/ccg-site" target="_blank">Código</a>
+                                    <a href="https://github.com/lucas-c-lima/ccg-site" target="_blank" class="btn-code">Código</a>
                                 </div>
                             </div>
                         </div>
                         <div class="project-card">
                             <img src="img/cel-poke.png" alt="App Pokedex Mobile Kotlin">
                             <div class="card-desc">
-                                <h2>Pokedex Mobile</h2>
+                                <h2 id="port2">Pokedex Mobile</h2>
                                 <div class="card-btns">
-                                    <a href="https://github.com/lucas-c-lima/pokedex-kotlin" target="_blank">Código</a>
+                                    <a href="https://github.com/lucas-c-lima/pokedex-kotlin" target="_blank" class="btn-code">Código</a>
                                 </div>
                             </div>
                         </div>
                         <div class="project-card">
                             <img src="img/web-scrap.jpg" alt="Código para webscraping em python">
                             <div class="card-desc">
-                                <h2>Web Scraping em Python</h2>
+                                <h2 id="port3">Web Scraping em Python</h2>
                                 <div class="card-btns">
-                                    <a href="https://github.com/lucas-c-lima/web-scrapping-test" target="_blank">Código</a>
+                                    <a href="https://github.com/lucas-c-lima/web-scrapping-test" target="_blank" class="btn-code">Código</a>
                                 </div>
                             </div>
                         </div>
@@ -198,8 +198,8 @@
         <section id="contact">
             <div class="container">
                 <div class="contact-content">
-                    <h2 class="section-title">Contato</h2>
-                    <p>Gostou do que viu? Entre em contato!</p>
+                    <h2 class="section-title" id="title-contact">Contato</h2>
+                    <p id="contact-text">Gostou do que viu? Entre em contato!</p>
                     <div class="social-media">
                         <a href="https://github.com/lucas-c-lima/"><i class="fa-brands fa-github"></i></a>
                         <a href="https://www.linkedin.com/in/lucascordeirodelima/"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -211,7 +211,8 @@
         </section>
     </main>
     <footer>Lucas Cordeiro de Lima @ 2025</footer>
+    <!-- JS -->
+    <script src="js/scripts.js"></script>
+    <script src="js/translator.js"></script>
 </body>
-<!-- JS -->
-<script src="js/scripts.js"></script>
 </html>

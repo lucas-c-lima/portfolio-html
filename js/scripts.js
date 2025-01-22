@@ -32,17 +32,30 @@ const titles = [
     "Analista de Dados",
     "Desenvolvedor de API"
 ];
+const titlesEn = [
+    "Full-Stack Developer",
+    "Data Analyst",
+    "API Developer"
+];
 
 let currentIndex = 0;
-  
+
+
+
 function changeTitle() {
+    let currentLanguage = localStorage.getItem('language')
     const titleElement = document.getElementById('title-changer');
     titleElement.style.animation = "none";
     titleElement.offsetHeight;
     titleElement.style.animation = "";
 
-    titleElement.textContent = titles[currentIndex];
-    currentIndex = (currentIndex + 1) % titles.length;
+    if (currentLanguage == 'en_us'){
+        titleElement.textContent = titlesEn[currentIndex];
+        currentIndex = (currentIndex + 1) % titlesEn.length;
+    } else {
+        titleElement.textContent = titles[currentIndex];
+        currentIndex = (currentIndex + 1) % titles.length;
+    }
 }
     changeTitle()
     setInterval(changeTitle, 4000);

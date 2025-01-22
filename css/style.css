@@ -1,4 +1,4 @@
-/* Animations -------------------------------------- */
+/* Animations ----------------------------------------------- */
 @keyframes fadeInOut {
     0% {
       opacity: 0;
@@ -22,22 +22,23 @@
     }
   }
 
-/* Fonts --------------------------------------------*/
+/* Fonts -----------------------------------------------------*/
 @font-face {
     font-family: "Satoshi";
     src: url(fonts/Satoshi-Variable.ttf);
 }
 
-/* Variables ----------------------------------------*/
+/* Variables -------------------------------------------------*/
 :root{
     --primary-color: #7562e0;
     --secondary-color: #282162;
     --bg-primary: #181824;
     --bg-primary-2: #1a1a29;
-    --bg-primary-3: #31313f;
+    --bg-primary-3: rgba(18, 18, 24, 0.9);
+    --light-bg-primary-2: #f9f4fb;
 }
 
-/* Resets */
+/* Resets ----------------------------------------------------*/
 *{
     margin: 0;
     padding: 0;
@@ -52,10 +53,10 @@ body{
     background-color: var(--bg-primary-2);
 }
 
-/* Header + Side Menu -------------------------------*/
+/* Header + Side Menu ----------------------------------------*/
 #header{
     width: 100%;
-    background-color: rgba(18, 18, 24, 0.9);
+    background-color: var(--bg-primary-3);
     padding: 20px;
     position: fixed;
     z-index: 990;
@@ -106,6 +107,9 @@ body{
 #navbar ul li a:hover, #menu-toggle:hover{
     color: var(--primary-color);
     transition: .5s;
+}
+#btn-language{
+    cursor: pointer;
 }
 .on-mobile{
     display: none;
@@ -169,7 +173,7 @@ body{
     right: 0;
 }
 
-/* Presentation Section ------------------------------------*/
+/* Presentation Section --------------------------------------*/
 #presentation{
     position: relative;
     width: 100%;
@@ -278,7 +282,7 @@ body{
     margin-right: 10px;
 }
 
-/* Main Config */
+/* Main Config  ---------------------------------------------*/
 
 main{
     position: relative;
@@ -310,6 +314,7 @@ main section:nth-child(odd), footer{
     color: var(--primary-color);
 }
 
+/* About ---------------------------------------------------- */
 .about-text{
     font-size: 1.3vw;
     text-align: justify;
@@ -406,6 +411,7 @@ main section:nth-child(odd), footer{
     filter: invert(1);
 }
 
+/* Portfolio ------------------------------------------------ */
 .project-card{
     width: 32%;
     height: 15vw;
@@ -487,6 +493,7 @@ main section:nth-child(odd), footer{
     transition: .4s;
 }
 
+/* Contact -------------------------------------------------- */
 .contact-content p{
     font-size: 1.5em;
     margin-bottom: 10px;
@@ -511,6 +518,7 @@ main section:nth-child(odd), footer{
     transition: .5s;
 }
 
+/* Footer --------------------------------------------------- */
 footer{
     width: 100%;
     padding: 20px;
@@ -518,8 +526,7 @@ footer{
     color: #aaa;
 }
 
-/* Media Queries */
-
+/* Media Queries -------------------------------------------- */
 @media (max-width: 576px) {
     .container{
         width: 90%;
