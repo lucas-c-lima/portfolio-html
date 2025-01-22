@@ -61,7 +61,7 @@ const translations = {
 function loadLanguage(){
     const savedLanguage = localStorage.getItem('language');
 
-    return savedLanguage ? savedLanguage : 'en_us'
+    return savedLanguage ? savedLanguage : 'pt_br'
 }
 
 let selected = loadLanguage();
