@@ -1,15 +1,9 @@
 const sideMenuToggle = document.getElementById('menu-toggle');
 const sideMenu = document.getElementById('side-menu');
 
-// Rolar até a section quando clicar
+// Setando botões para fechar menu lateral
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-
         if(window.getComputedStyle(document.querySelector('.on-mobile')).display == 'block'){
             toggleMenu();
         }
@@ -26,7 +20,7 @@ function toggleMenu() {
     sideMenuToggle.classList.toggle('open');
 }
 
-/* Título muda a cada 5 segundos */
+// Troca de título a cada 5s
 const titles = [
     "Desenvolvedor Full-Stack",
     "Analista de Dados",
@@ -39,8 +33,6 @@ const titlesEn = [
 ];
 
 let currentIndex = 0;
-
-
 
 function changeTitle() {
     let currentLanguage = localStorage.getItem('language')
