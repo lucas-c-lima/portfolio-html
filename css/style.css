@@ -66,6 +66,7 @@ body{
     z-index: 990;
     opacity: 0.95;
     box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.50);
+    display: flex;
 }
 
 #logo{
@@ -116,7 +117,8 @@ body{
     transition: .5s;
 }
 
-#navbar ul li a img, #side-menu ul li a img{
+#navbar ul li a img, #side-menu ul li a img,
+#btn-language img{
     height: 1.5rem;
 }
 
@@ -596,7 +598,7 @@ footer{
     .on-mobile, .menu-toggle.on-mobile{
         display: block;
     }
-    .on-pc{
+    .on-pc, #btn-language.on-pc{
         display: none;
     }
     #menu-toggle:hover{
@@ -735,7 +737,7 @@ footer{
     .on-mobile, .menu-toggle.on-mobile{
         display: block;
     }
-    .on-pc{
+    .on-pc, #btn-language.on-pc{
         display: none;
     }
     #menu-toggle:hover{
@@ -852,7 +854,6 @@ footer{
         padding: 10px 20px;
     }
     #header .container{
-        width: 100%;
         justify-content: space-between;  
     }
     #logo{
