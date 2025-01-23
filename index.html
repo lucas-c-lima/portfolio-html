@@ -30,7 +30,16 @@
                     <li class="on-pc"><a href="#tecnologies" id="navbar3">Tecnologias</a></li>
                     <li class="on-pc"><a href="#projects" id="navbar4">Projetos</a></li>
                     <li class="on-pc"><a href="#contact" id="navbar5">Contato</a></li>
-                    <li><i class="fas fa-gear" id="menu-toggle"></i></li>
+                    <li class="on-pc"><a onclick="changeLanguage()" id="btn-language">
+                        <img src="./img/flag-brazil.png" alt="">
+                        <img src="./img/chevron-right-solid.svg" id="img-cl">
+                        <img src="./img/flag-us.png" alt="">
+                    </a></li>
+                    <div class="menu-toggle on-mobile" id="menu-toggle">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
                 </ul>
             </nav>
         </div>
@@ -42,7 +51,11 @@
             <li class="on-mobile"><a href="#tecnologies" id="navbar8">Tecnologias</a></li>
             <li class="on-mobile"><a href="#projects" id="navbar9">Projetos</a></li>
             <li class="on-mobile"><a href="#contact" id="navbar10">Contato</a></li>
-            <li><a id="btn-language" onclick="changeLanguage(); toggleMenu()">Change Language</a></li>
+            <li class="on-mobile"><a onclick="changeLanguage(); toggleMenu()" id="m-btn-language">
+                <img src="./img/flag-brazil.png" alt="">
+                <img src="./img/chevron-right-solid.svg" id="img-cl">
+                <img src="./img/flag-us.png" alt="">
+            </a></li>
         </ul>
     </nav>
     <section id="presentation">

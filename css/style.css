@@ -101,6 +101,9 @@ body{
     list-style: none;
     gap: 20px;
 }
+#navbar ul li{
+    margin: auto 0;
+}
 #navbar ul li a{
     font-weight: 400;
     color: #bbb;
@@ -112,15 +115,57 @@ body{
     color: var(--primary-color);
     transition: .5s;
 }
-#btn-language{
-    cursor: pointer;
+
+#navbar ul li a img, #side-menu ul li a img{
+    height: 1.5rem;
 }
-.on-mobile{
+
+#img-cl{
+    filter: invert(70%);
+    width: 10px;
+    margin-right: 1px;
+}
+
+#btn-language, #m-btn-language{
+    cursor: pointer;
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    transition: .5s;
+}
+.on-mobile, .menu-toggle.on-mobile{
     display: none;
 }
 .on-pc{
     display: block;
 }
+
+.menu-toggle {
+    cursor: pointer;
+    position: relative;
+}
+.menu-toggle .bar {
+    width: 1.2em;
+    height: 3px;
+    background-color: #bbb;
+    margin: 5px 0;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+
+.menu-toggle.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+    background-color: #bbb;
+}
+.menu-toggle.open .bar:nth-child(2) {
+    opacity: 0;
+}
+.menu-toggle.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+    background-color: #bbb;
+}
+
+
 
 #menu-toggle{
     color: #bbb;
@@ -548,7 +593,7 @@ footer{
     .logo-content h1{
         font-size: 5vw;
     }
-    .on-mobile{
+    .on-mobile, .menu-toggle.on-mobile{
         display: block;
     }
     .on-pc{
@@ -687,7 +732,7 @@ footer{
     .logo-content h1{
         font-size: 2.5vw;
     }
-    .on-mobile{
+    .on-mobile, .menu-toggle.on-mobile{
         display: block;
     }
     .on-pc{

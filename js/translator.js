@@ -5,7 +5,6 @@ const translations = {
         navbar3_8: "Tecnologias",
         navbar4_9: "Projetos",
         navbar5_10: "Contato",
-        btn_language: "Change Language", 
         h2_greetings: "Olá, eu sou",
         title_about: "Sobre Mim",
         about_text: `Sou um <strong>Desenvolvedor de Softwares</strong> apaixonado por criar soluções eficientes. Com experiência em diversas linguagens de programação e tecnologias, foco no <strong>desenvolvimento de aplicativos</strong> e <strong>APIs</strong> que aprimoram a experiência do usuário e otimizam processos.
@@ -33,7 +32,6 @@ const translations = {
         navbar3_8: "Technologies",
         navbar4_9: "Projects",
         navbar5_10: "Contact",
-        btn_language: "Trocar Linguagem",
         h2_greetings: "Hello, I am",
         title_about: "About Me",
         about_text: `I am a <strong>Software Developer</strong> passionate about creating efficient solutions. With experience in various programming languages and technologies, I focus on <strong>app development</strong> and <strong>APIs</strong> that enhance user experience and optimize processes.
@@ -85,7 +83,6 @@ function updatePage(){
     document.getElementById("navbar9").innerText = translations[selected].navbar4_9;
     document.getElementById("navbar5").innerText = translations[selected].navbar5_10;
     document.getElementById("navbar10").innerText = translations[selected].navbar5_10;
-    document.getElementById("btn-language").innerHTML = translations[selected].btn_language;
     document.getElementById("h2-greetings").innerHTML = translations[selected].h2_greetings;
     document.getElementById("title-about").innerHTML = translations[selected].title_about;
     document.getElementById("about-text").innerHTML = translations[selected].about_text;
@@ -117,6 +114,20 @@ function updatePage(){
     document.getElementById("title-contact").innerHTML = translations[selected].title_contact;
     document.getElementById("contact-text").innerHTML = translations[selected].contact_text;
 
+    changeLanguageIcons();
+}
+
+function changeLanguageIcons(){
+    const btnPc = document.getElementById("btn-language");
+    const btnMob = document.getElementById('m-btn-language')
+
+    if(localStorage.getItem('language') == 'pt_br'){
+        btnPc.style.flexDirection = "row";
+        btnMob.style.flexDirection = "row";
+    } else {
+        btnPc.style.flexDirection = "row-reverse";
+        btnMob.style.flexDirection = "row-reverse";
+    }
 }
 
 document.addEventListener("DOMContentLoaded", function() {
