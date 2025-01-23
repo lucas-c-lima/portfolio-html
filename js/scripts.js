@@ -20,6 +20,18 @@ function toggleMenu() {
     sideMenuToggle.classList.toggle('open');
 }
 
+// Fechar o menu ao clicar fora
+document.addEventListener('click', (event) => {
+    if (
+        sideMenu.classList.contains('open') &&
+        !sideMenu.contains(event.target) &&
+        !sideMenuToggle.contains(event.target)
+    ) {
+        toggleMenu();
+    }
+});
+
+
 // Troca de título a cada 5s
 const titles = [
     "Desenvolvedor Full-Stack",
